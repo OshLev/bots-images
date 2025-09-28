@@ -1,0 +1,8 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <rect x="20" y="20" width="60" height="60" rx="5" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+        <g stroke="#64748b" stroke-width="3" stroke-linecap="round">
+            <path d="M30 35 H 70"><animate attributeName="stroke-dasharray" values="40 0; 0 40; 40 0" dur="3s" repeatCount="indefinite" /></path>
+            <path d="M30 50 H 50"><animate attributeName="stroke-dasharray" values="20 0; 0 20; 20 0" dur="3s" begin="1s" repeatCount="indefinite" /></path>
+            <path d="M30 65 H 70"><animate attributeName="stroke-dasharray" values="40 0; 0 40; 40 0" dur="3s" begin="2s" repeatCount="indefinite" /></path>
+        </g>
+    </svg>

@@ -1,0 +1,6 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 30 C 20 10, 80 10, 80 30 V 70 C 80 90, 20 90, 20 70 V 30" fill="#fce7f3" stroke="#f472b6" stroke-width="2"/>
+        <path d="M40 40 C 35 40, 35 50, 40 50" stroke="#ec4899" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <path d="M60 40 C 65 40, 65 50, 60 50" stroke="#ec4899" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <path d="M35 65 Q 50 75, 65 65" stroke="#ec4899" stroke-width="4" fill="none" stroke-linecap="round"><animate attributeName="d" values="M35 65 Q 50 75 65 65; M35 65 Q 50 65 65 65; M35 65 Q 50 75 65 65" dur="2s" repeatCount="indefinite" /></path>
+    </svg>

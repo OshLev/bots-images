@@ -1,0 +1,12 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="grad-formality" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#a5b4fc" />
+                <stop offset="100%" stop-color="#818cf8" />
+            </linearGradient>
+            <style>{`.pen-nib { animation: write-anim-formality 2s ease-in-out infinite; } @keyframes write-anim-formality { 0%, 100% { transform: rotate(-5deg); } 50% { transform: rotate(5deg); } }`}</style>
+        </defs>
+        <rect x="15" y="65" width="70" height="2" fill="url(#grad-formality)" />
+        <path d="M40 20 L60 40 L45 80 L35 70 Z" fill="#c7d2fe" />
+        <path d="M60 40 L40 20 L45 15 L65 35 Z" fill="#6366f1" class="pen-nib"/>
+    </svg>

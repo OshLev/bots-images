@@ -1,0 +1,5 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="30" r="10" fill="#bae6fd" stroke="#38bdf8" stroke-width="2"/>
+        <path d="M30 80 C 30 50, 70 50, 70 80 Z" fill="#bae6fd" stroke="#38bdf8" stroke-width="2"/>
+        <path d="M50 40 L 50 55" stroke="#0ea5e9" stroke-width="2"><animate attributeName="d" values="M50 40 L 50 55; M40 45 L 60 45; M50 40 L 50 55" dur="3s" repeatCount="indefinite" /></path>
+    </svg>

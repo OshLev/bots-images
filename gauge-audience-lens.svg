@@ -1,0 +1,7 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="30" fill="#e0f2fe"/>
+        <circle cx="50" cy="50" r="20" fill="#7dd3fc"/>
+        <circle cx="50" cy="50" r="10" fill="#0ea5e9"/>
+        <path d="M50 20 L 50 0 M50 80 L 50 100 M20 50 L 0 50 M80 50 L 100 50" stroke="#bae6fd" stroke-width="2"/>
+        <animateTransform attributeName="transform" type="translate" values="0 0; 5 0; -5 0; 0 0" dur="4s" repeatCount="indefinite" />
+    </svg>

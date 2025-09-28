@@ -1,0 +1,8 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <g stroke-linecap="round" stroke="#a78bfa" stroke-width="4">
+            <path d="M20 30 H 40"/>
+            <path d="M20 50 H 60"/>
+            <path d="M20 70 H 80"/>
+        </g>
+        <path d="M20 20 V 80" fill="none" stroke="#c4b5fd" stroke-width="2"><animate attributeName="d" values="M20 20 V 80; M40 20 V 80; M60 20 V 80; M80 20 V 80; M20 20 V 80" dur="4s" repeatCount="indefinite" /></path>
+    </svg>

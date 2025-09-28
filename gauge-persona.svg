@@ -1,0 +1,8 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <defs><style>{`.mask-persona { animation: mask-reveal-persona 3s infinite alternate; } @keyframes mask-reveal-persona { from { transform: translateY(-30px); } to { transform: translateY(30px); } }`}</style></defs>
+        <path d="M50 20 L80 40 L50 90 L20 40 Z" fill="#d8b4fe" stroke="#a855f7" stroke-width="2"/>
+        <path d="M50 20 L80 40 L50 90 L20 40 Z" fill="#e9d5ff">
+            <animateTransform attributeName="transform" type="scale" values="1; 0.9; 1" dur="3s" repeatCount="indefinite" />
+        </path>
+        <path class="mask-persona" d="M50 20 L80 40 L50 60 L20 40 Z" fill="#c084fc"/>
+    </svg>
