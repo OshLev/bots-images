@@ -1,0 +1,28 @@
+<svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="grad-history" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color: #22D3EE; stop-opacity: 1" />
+                <stop offset="100%" style="stop-color: #0EA5E9; stop-opacity: 1" />
+            </linearGradient>
+            <style>
+                .swoosh {
+                    animation: swoosh-anim 4s infinite ease-in-out;
+                    transform-origin: 50px 50px;
+                    stroke-dasharray: 150;
+                    stroke-dashoffset: 0;
+                }
+                @keyframes swoosh-anim {
+                    0% { stroke-dashoffset: 150; transform: rotate(0deg); }
+                    50% { stroke-dashoffset: 0; }
+                    100% { stroke-dashoffset: -150; transform: rotate(360deg); }
+                }
+            </style>
+        </defs>
+        <rect width="100" height="100" rx="20" fill="url(#grad-history)" />
+        <circle cx="50" cy="50" r="28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-opacity="0.2" />
+        <path class="swoosh" d="M 78 50 A 28 28 0 1 0 50 22" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+        <g transform="translate(15, 15) scale(0.7)">
+             <path d="M 60 55 L 75 70" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" />
+             <circle cx="45" cy="45" r="20" fill="none" stroke="#FFFFFF" stroke-width="8" />
+        </g>
+    </svg>
