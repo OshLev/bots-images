@@ -1,0 +1,40 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <style>{`
+                .dollar-orbit {
+                    animation: dollar-orbit-anim 6s linear infinite;
+                    transform-origin: 50px 50px;
+                }
+                .pulse {
+                    animation: pulse-anim 2s infinite ease-in-out;
+                }
+                @keyframes dollar-orbit-anim {
+                    from { transform: rotate(0deg); }
+                    to { transform: rotate(360deg); }
+                }
+                @keyframes pulse-anim {
+                    0%, 100% { opacity: 0.7; transform: scale(0.95); }
+                    50% { opacity: 1; transform: scale(1.05); }
+                }
+            `}</style>
+        </defs>
+        <text 
+            x="50" y="62" 
+            font-family="monospace" 
+            font-size="48" 
+            font-weight="bold" 
+            text-anchor="middle"
+            fill="#22c55e"
+            class="pulse"
+        >
+            T
+        </text>
+        <g class="dollar-orbit">
+            <text x="50" y="20" font-size="18" text-anchor="middle" fill="#16a34a" opacity="0.8">$</text>
+            <text x="88" y="55" font-size="14" text-anchor="middle" fill="#16a34a" opacity="0.7" style="animation-delay: 3s">$</text>
+            <text x="12" y="55" font-size="14" text-anchor="middle" fill="#16a34a" opacity="0.7" style="animation-delay: 3s">$</text>
+        </g>
+         <circle cx="50" cy="50" r="35" fill="none" stroke="#bbf7d0" stroke-width="2" stroke-dasharray="4 8">
+             <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="20s" repeatCount="indefinite" />
+         </circle>
+    </svg>

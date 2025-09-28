@@ -1,0 +1,30 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="grad-batch" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#818cf8" />
+                <stop offset="100%" stop-color="#6366f1" />
+            </linearGradient>
+        </defs>
+        <rect x="15" y="15" width="70" height="80" rx="8" fill="#eef2ff" stroke="#c7d2fe" stroke-width="2" class="dark:fill-gray-700/50 dark:stroke-gray-600"/>
+        <rect x="25" y="10" width="50" height="10" rx="5" fill="url(#grad-batch)" />
+
+        <g stroke="#34d399" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M35 40 L42 47 L55 33">
+                <animate attributeName="stroke-dasharray" values="0 30; 30 0; 30 0" dur="2s" repeatCount="indefinite" begin="0s" />
+                <animate attributeName="opacity" values="0; 1; 0" dur="2s" repeatCount="indefinite" begin="0s" />
+            </path>
+             <path d="M35 60 L42 67 L55 53">
+                <animate attributeName="stroke-dasharray" values="0 30; 30 0; 30 0" dur="2s" repeatCount="indefinite" begin="0.5s" />
+                <animate attributeName="opacity" values="0; 1; 0" dur="2s" repeatCount="indefinite" begin="0.5s" />
+            </path>
+             <path d="M35 80 L42 87 L55 73">
+                <animate attributeName="stroke-dasharray" values="0 30; 30 0; 30 0" dur="2s" repeatCount="indefinite" begin="1s" />
+                <animate attributeName="opacity" values="0; 1; 0" dur="2s" repeatCount="indefinite" begin="1s" />
+            </path>
+        </g>
+        <g stroke="#a5b4fc" stroke-width="2" stroke-linecap="round" class="dark:stroke-gray-500">
+            <path d="M62 38 H 78" />
+            <path d="M62 58 H 78" />
+            <path d="M62 78 H 78" />
+        </g>
+    </svg>

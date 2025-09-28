@@ -1,0 +1,8 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="10" width="38" height="80" rx="5" fill="#eef2ff" stroke="#c7d2fe" stroke-width="2"/>
+        <text x="15" y="22" font-size="8" fill="#4338ca">Inputs</text>
+        <path d="M 15 30 H 35" stroke="#a5b4fc" stroke-width="2"><animate attributeName="stroke-dasharray" values="0 20; 20 0" dur="3s" repeatCount="indefinite" /></path>
+        <rect x="52" y="10" width="38" height="80" rx="5" fill="#fef2f2" stroke="#fecaca" stroke-width="2"/>
+        <text x="57" y="22" font-size="8" fill="#b91c1c">Problem</text>
+        <path d="M 57 30 H 80" stroke="#fca5a5" stroke-width="2"><animate attributeName="stroke-dasharray" values="0 23; 23 0" dur="3s" begin="1s" repeatCount="indefinite" /></path>
+    </svg>

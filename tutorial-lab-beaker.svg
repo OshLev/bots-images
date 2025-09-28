@@ -1,0 +1,7 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 40 15 H 60 V 40 L 80 85 H 20 L 40 40 V 15 Z" fill="#c7d2fe" stroke="#6366f1" stroke-width="2"/>
+        <path d="M 25 85 H 75 L 65 65 H 35 Z" fill="#818cf8"/>
+        <circle cx="35" cy="75" r="4" fill="#a5b4fc"><animate attributeName="cy" values="75;60;75" dur="1.5s" repeatCount="indefinite" /></circle>
+        <circle cx="50" cy="80" r="5" fill="#a5b4fc"><animate attributeName="cy" values="80;65;80" dur="2s" begin="0.5s" repeatCount="indefinite" /></circle>
+        <circle cx="65" cy="72" r="3" fill="#a5b4fc"><animate attributeName="cy" values="72;58;72" dur="1.2s" begin="0.2s" repeatCount="indefinite" /></circle>
+    </svg>

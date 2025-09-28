@@ -1,0 +1,9 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="15" width="80" height="35" rx="5" fill="#eef2ff" stroke="#c7d2fe" stroke-width="2"/>
+        <text x="15" y="27" font-size="8" fill="#4338ca">System Prompt</text>
+        <path d="M 15 35 H 45" stroke="#a5b4fc" stroke-width="2"><animate attributeName="stroke-dasharray" values="0 30; 30 0" dur="2s" repeatCount="indefinite" /></path>
+        <path d="M 15 42 H 60" stroke="#a5b4fc" stroke-width="2"><animate attributeName="stroke-dasharray" values="0 45; 45 0" dur="2s" begin="0.5s" repeatCount="indefinite" /></path>
+        <rect x="10" y="60" width="80" height="25" rx="5" fill="#eef2ff" stroke="#c7d2fe" stroke-width="2"/>
+        <text x="15" y="72" font-size="8" fill="#4338ca">User Input</text>
+        <path d="M 15 78 H 55" stroke="#a5b4fc" stroke-width="2"><animate attributeName="stroke-dasharray" values="0 40; 40 0" dur="2s" begin="1s" repeatCount="indefinite" /></path>
+    </svg>

@@ -1,0 +1,8 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="30" width="43" height="50" rx="5" fill="#eef2ff" stroke="#c7d2fe" stroke-width="2"/>
+        <text x="26.5" y="25" text-anchor="middle" font-size="8" fill="#4338ca">A</text>
+        <rect x="52" y="30" width="43" height="50" rx="5" fill="#eef2ff" stroke="#c7d2fe" stroke-width="2"/>
+        <text x="73.5" y="25" text-anchor="middle" font-size="8" fill="#4338ca">B</text>
+        <rect x="35" y="82" width="30" height="12" rx="6" fill="#c7d2fe"/>
+        <circle cx="41" cy="88" r="4" fill="#6366f1"><animate attributeName="cx" values="41;59;41" dur="2s" repeatCount="indefinite" /></circle>
+    </svg>

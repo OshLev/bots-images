@@ -1,0 +1,8 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <rect x="15" y="25" width="70" height="10" rx="5" fill="#e0e7ff"/>
+        <rect x="15" y="45" width="70" height="10" rx="5" fill="#e0e7ff"/>
+        <rect x="15" y="65" width="70" height="10" rx="5" fill="#e0e7ff"/>
+        <rect x="15" y="25" width="40" height="10" rx="5" fill="#6366f1"><animate attributeName="width" values="40;60;20;40" dur="4s" repeatCount="indefinite" /></rect>
+        <rect x="15" y="45" width="60" height="10" rx="5" fill="#6366f1"><animate attributeName="width" values="60;30;70;60" dur="4s" begin="1s" repeatCount="indefinite" /></rect>
+        <rect x="15" y="65" width="30" height="10" rx="5" fill="#6366f1"><animate attributeName="width" values="30;50;20;30" dur="4s" begin="2s" repeatCount="indefinite" /></rect>
+    </svg>

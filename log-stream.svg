@@ -1,0 +1,27 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="grad-log-stream" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#a78bfa" />
+                <stop offset="100%" stop-color="#8b5cf6" />
+            </linearGradient>
+            <style>{`
+                @keyframes stream-flow {
+                    from { stroke-dashoffset: 0; }
+                    to { stroke-dashoffset: 20; }
+                }
+                @keyframes pulse-dot {
+                    0%, 100% { r: 2; opacity: 1; }
+                    50% { r: 3; opacity: 0.5; }
+                }
+            `}</style>
+        </defs>
+        <rect x="15" y="15" width="70" height="70" rx="8" fill="#f3e8ff" stroke="#c084fc" stroke-width="2" class="dark:fill-gray-700/50 dark:stroke-gray-600"/>
+        <g stroke="url(#grad-log-stream)" stroke-width="4" stroke-linecap="round">
+            <path d="M25 30 H 75" stroke-dasharray="10 10" style={{ animation: 'stream-flow 1s linear infinite' }} />
+            <path d="M25 50 H 75" stroke-dasharray="5 5" style={{ animation: 'stream-flow 0.8s linear infinite reverse' }} />
+            <path d="M25 70 H 75" stroke-dasharray="10 5" style={{ animation: 'stream-flow 1.2s linear infinite' }} />
+        </g>
+        <circle cx="30" cy="30" r="2" fill="#a855f7" style={{ animation: 'pulse-dot 1.5s ease-in-out infinite' }} />
+        <circle cx="60" cy="50" r="2" fill="#a855f7" style={{ animation: 'pulse-dot 1.5s ease-in-out infinite 0.5s' }} />
+        <circle cx="45" cy="70" r="2" fill="#a855f7" style={{ animation: 'pulse-dot 1.5s ease-in-out infinite 1s' }} />
+    </svg>

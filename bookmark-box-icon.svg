@@ -5,6 +5,7 @@
                 <stop offset="100%" style="stop-color: #EC4899; stop-opacity: 1" />
             </linearGradient>
             <style>
+                {`
                 .sparkle {
                     animation: sparkle-anim 2s infinite ease-in-out;
                     transform-origin: center;
@@ -13,6 +14,7 @@
                     0%, 100% { transform: scale(0.8); opacity: 0.5; }
                     50% { transform: scale(1.1); opacity: 1; }
                 }
+                `}
             </style>
         </defs>
         <rect width="100" height="100" rx="20" fill="url(#grad-stash)" />
