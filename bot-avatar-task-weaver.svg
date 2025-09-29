@@ -1,0 +1,27 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <radialGradient id="grad-task-bg" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#4c1d95" />
+            <stop offset="100%" stop-color="#4a044e" />
+        </radialGradient>
+        <style>
+            .task-node { animation: pulse-node 3s infinite ease-in-out; }
+            @keyframes pulse-node { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+            .task-link { stroke-dasharray: 100; stroke-dashoffset: 100; animation: draw-link 6s infinite ease-in-out; }
+            @keyframes draw-link { 50%, 100% { stroke-dashoffset: 0; } }
+        </style>
+    </defs>
+    <rect width="100" height="100" rx="10" fill="url(#grad-task-bg)" />
+    
+    <g fill="#f0abfc" transform-origin="center">
+        <circle class="task-node" cx="50" cy="25" r="8" style="animation-delay: -1s;" />
+        <circle class="task-node" cx="25" cy="75" r="8" style="animation-delay: -2s;" />
+        <circle class="task-node" cx="75" cy="75" r="8" />
+    </g>
+    
+    <g fill="none" stroke="#f5d0fe" stroke-width="2" stroke-linecap="round">
+        <path class="task-link" d="M 50 33 L 29 70" style="animation-delay: -1s;" />
+        <path class="task-link" d="M 50 33 L 71 70" style="animation-delay: -0.5s;" />
+        <path class="task-link" d="M 33 75 H 67" />
+    </g>
+</svg>
