@@ -1,0 +1,20 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <radialGradient id="grad-sun" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#f59e0b" />
+            <stop offset="100%" stop-color="#ea580c" />
+        </radialGradient>
+        <style>
+            .ray { transform-origin: center; animation: spin-sun 20s linear infinite; }
+            .sun-core { animation: pulse-sun 2s infinite ease-in-out; transform-origin: center; }
+            @keyframes spin-sun { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+            @keyframes pulse-sun { 0%, 100% { transform: scale(0.95); } 50% { transform: scale(1.05); } }
+        </style>
+    </defs>
+    <rect width="100" height="100" rx="10" fill="url(#grad-sun)" />
+    <g class="ray">
+        <path d="M 50 10 V 30 M 50 90 V 70 M 10 50 H 30 M 90 50 H 70" stroke="#fcd34d" stroke-width="4" stroke-linecap="round" />
+        <path d="M 22 22 L 36 36 M 78 78 L 64 64 M 22 78 L 36 64 M 78 22 L 64 36" stroke="#fcd34d" stroke-width="4" stroke-linecap="round" />
+    </g>
+    <circle class="sun-core" cx="50" cy="50" r="25" fill="#fef08a" />
+</svg>

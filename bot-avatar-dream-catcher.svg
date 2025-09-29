@@ -1,0 +1,23 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <radialGradient id="grad-dream" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#7c3aed" />
+            <stop offset="100%" stop-color="#3730a3" />
+        </radialGradient>
+        <style>
+            .feather { animation: sway 3s infinite ease-in-out; transform-origin: top center; }
+            @keyframes sway { 0%, 100% { transform: rotate(-5deg); } 50% { transform: rotate(5deg); } }
+            .web { animation: pulse-web 4s infinite; }
+            @keyframes pulse-web { 0%, 100% { opacity: 0.7; } 50% { opacity: 1; } }
+        </style>
+    </defs>
+    <rect width="100" height="100" rx="10" fill="url(#grad-dream)" />
+    <circle cx="50" cy="45" r="30" fill="none" stroke="#c4b5fd" stroke-width="3" />
+    <g class="web" stroke="#a78bfa" stroke-width="1">
+        <path d="M50 15 L 50 75 M20 45 L 80 45 M29 28 L 71 62 M29 62 L 71 28" />
+        <circle cx="50" cy="45" r="15" fill="none" />
+    </g>
+    <path class="feather" style="animation-delay: -0.5s;" d="M40 75 V 85 C 40 95, 35 95, 35 85 V 75" stroke="#c4b5fd" stroke-width="2" fill="none" />
+    <path class="feather" d="M50 75 V 90 C 50 100, 45 100, 45 90 V 75" stroke="#c4b5fd" stroke-width="2" fill="none" />
+    <path class="feather" style="animation-delay: -1s;" d="M60 75 V 85 C 60 95, 55 95, 55 85 V 75" stroke="#c4b5fd" stroke-width="2" fill="none" />
+</svg>

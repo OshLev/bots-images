@@ -1,0 +1,20 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+    <defs>
+        <style>
+            .pixel { animation: blink-pixel 2s infinite; }
+            @keyframes blink-pixel { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
+        </style>
+    </defs>
+    <rect width="100" height="100" rx="10" fill="#1f2937" />
+    <g>
+        <rect class="pixel" x="20" y="20" width="20" height="20" fill="#4ade80" style="animation-delay: -0.5s;" />
+        <rect class="pixel" x="40" y="20" width="20" height="20" fill="#60a5fa" style="animation-delay: -1.0s;" />
+        <rect class="pixel" x="60" y="20" width="20" height="20" fill="#f472b6" style="animation-delay: -1.5s;" />
+        <rect class="pixel" x="20" y="40" width="20" height="20" fill="#fbbf24" style="animation-delay: -0.2s;" />
+        <rect x="40" y="40" width="20" height="20" fill="#4b5563" />
+        <rect class="pixel" x="60" y="40" width="20" height="20" fill="#a78bfa" style="animation-delay: -1.2s;" />
+        <rect class="pixel" x="20" y="60" width="20" height="20" fill="#f87171" style="animation-delay: -0.8s;" />
+        <rect class="pixel" x="40" y="60" width="20" height="20" fill="#38bdf8" style="animation-delay: -1.8s;" />
+        <rect class="pixel" x="60" y="60" width="20" height="20" fill="#34d399" style="animation-delay: -0.4s;" />
+    </g>
+</svg>
