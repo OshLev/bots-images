@@ -1,0 +1,13 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            .bubble { animation: appear-bubble 4s infinite; opacity: 0; }
+            @keyframes appear-bubble { 
+                0%, 100% { opacity: 0; transform: translateY(10px); }
+                20%, 80% { opacity: 1; transform: translateY(0px); }
+            }
+        </style>
+    </defs>
+    <rect class="bubble" style="animation-delay: 0s;" x="10" y="20" width="50" height="20" rx="10" fill="#e0f2fe"/>
+    <rect class="bubble" style="animation-delay: -2s;" x="40" y="50" width="50" height="20" rx="10" fill="#dbeafe"/>
+</svg>

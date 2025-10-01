@@ -1,0 +1,17 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            .line-anim { animation: line-appear 4s infinite; }
+            @keyframes line-appear { 
+                0%, 100% { opacity: 0; transform: scaleX(0); }
+                20%, 80% { opacity: 1; transform: scaleX(1); }
+            }
+        </style>
+    </defs>
+    <rect x="15" y="15" width="70" height="70" rx="5" fill="#1f2937" stroke="#4b5563" stroke-width="2"/>
+    <g stroke-linecap="round">
+        <path class="line-anim" style="animation-delay: 0s; transform-origin: left;" d="M 25 30 H 75" stroke="#4ade80" stroke-width="3"/>
+        <path class="line-anim" style="animation-delay: -1s; transform-origin: left;" d="M 25 50 H 75" stroke="#facc15" stroke-width="3"/>
+        <path class="line-anim" style="animation-delay: -2s; transform-origin: left;" d="M 25 70 H 75" stroke="#f87171" stroke-width="3"/>
+    </g>
+</svg>

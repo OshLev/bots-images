@@ -1,0 +1,22 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            .arrow-flow { stroke-dasharray: 20; animation: flow-arrow 4s infinite linear; }
+            @keyframes flow-arrow { from { stroke-dashoffset: 40; } to { stroke-dashoffset: 0; } }
+            .icon-swap { animation: swap-icon 4s infinite; }
+            @keyframes swap-icon {
+                0%, 40% { opacity: 1; }
+                50% { opacity: 0; }
+                60%, 100% { opacity: 1; }
+            }
+        </style>
+    </defs>
+    <g class="icon-swap" style="animation-direction: normal;">
+        <rect x="20" y="40" width="20" height="20" fill="#fbcfe8"/>
+        <path d="M25 45 V 55 L 30 50 L 35 55 V 45 Z" fill="#db2777"/>
+    </g>
+    <g class="icon-swap" style="animation-direction: reverse;">
+        <path d="M 70 40 H 80 V 50 L 90 60 L 80 70 V 60 H 70 Z" fill="#a5b4fc" />
+    </g>
+    <path class="arrow-flow" d="M 45 50 H 65" stroke="#9ca3b8" stroke-width="3" fill="none" />
+</svg>
