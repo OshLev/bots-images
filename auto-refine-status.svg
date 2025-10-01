@@ -1,21 +1,21 @@
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-            <linearGradient id="grad-refine" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#facc15" />
-                <stop offset="100%" stop-color="#fbbf24" />
-            </linearGradient>
-            <style>{`
-                .refine-orbit { animation: refine-orbit-anim 8s linear infinite; transform-origin: 50px 50px; }
-                @keyframes refine-orbit-anim { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-                .refine-pulse { animation: refine-pulse-anim 2s infinite ease-in-out; }
-                @keyframes refine-pulse-anim { 0%, 100% { transform: scale(0.95); opacity: 0.8; } 50% { transform: scale(1.05); opacity: 1; } }
-            `}</style>
-        </defs>
-        <circle cx="50" cy="50" r="40" fill="#fef9c3" stroke="#fde68a" stroke-width="2" class="dark:fill-gray-700/50 dark:stroke-gray-600"/>
-        <g class="refine-pulse">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" fill="none" stroke="currentColor" stroke-width="1.5" class="text-yellow-500" style={{ transform: 'scale(2.5) translate(10px, 10px)' }}/>
-        </g>
-        <g class="refine-orbit">
-             <circle cx="50" cy="15" r="5" fill="url(#grad-refine)" />
-        </g>
-    </svg>
+    <defs>
+        <linearGradient id="grad-refine" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#facc15" />
+            <stop offset="100%" stop-color="#fbbf24" />
+        </linearGradient>
+        <style>
+            .refine-orbit { animation: refine-orbit-anim 8s linear infinite; transform-origin: 50px 50px; }
+            @keyframes refine-orbit-anim { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+            .refine-pulse { animation: refine-pulse-anim 2s infinite ease-in-out; }
+            @keyframes refine-pulse-anim { 0%, 100% { transform: scale(0.95); opacity: 0.8; } 50% { transform: scale(1.05); opacity: 1; } }
+        </style>
+    </defs>
+    <circle cx="50" cy="50" r="40" fill="#fef9c3" stroke="#fde68a" stroke-width="2" class="dark:fill-gray-700/50 dark:stroke-gray-600"/>
+    <g class="refine-pulse">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" fill="none" stroke="currentColor" stroke-width="1.5" class="text-yellow-500" style="transform: scale(2.5) translate(10px, 10px);"/>
+    </g>
+    <g class="refine-orbit">
+         <circle cx="50" cy="15" r="5" fill="url(#grad-refine)" />
+    </g>
+</svg>
