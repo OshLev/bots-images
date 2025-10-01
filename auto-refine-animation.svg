@@ -1,115 +1,109 @@
 <svg viewBox="30 0 340 212.5" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-            <style>{`
-                .text-label { font-family: sans-serif; font-size: 10px; fill: #4b5563; }
-                .dark .text-label { fill: #d1d5db; }
-                .icon { stroke-width: 2; }
-                
-                @keyframes dash { to { stroke-dashoffset: -100; } }
-                .flow-arrow { stroke-dasharray: 4 4; animation: dash 2s linear infinite; }
+    <defs>
+        <style>
+            .text-label { font-family: sans-serif; font-size: 10px; fill: #4b5563; }
+            .dark .text-label { fill: #d1d5db; }
+            .icon { stroke-width: 2; }
+            
+            @keyframes dash { to { stroke-dashoffset: -100; } }
+            .flow-arrow { stroke-dasharray: 4 4; animation: dash 2s linear infinite; }
 
-                @keyframes pop-in { 0% { transform: scale(0.8); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
-                .pop-in { animation: pop-in 0.3s ease-out forwards; }
+            @keyframes pop-in { 0% { transform: scale(0.8); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+            .pop-in { animation: pop-in 0.3s ease-out forwards; }
 
-                .fade-in-out { animation: fade-in-out 12s linear infinite; }
-                @keyframes fade-in-out {
-                    0%, 100% { opacity: 0; }
-                    5%, 15% { opacity: 1; }
-                    20%, 100% { opacity: 0; }
-                }
-                
-                .path-segment { opacity: 0; }
-                .segment-1 { animation: show-segment 12s linear infinite 0s; }
-                .segment-2 { animation: show-segment 12s linear infinite 1.5s; }
-                .segment-3 { animation: show-segment 12s linear infinite 3s; }
-                .segment-4-bad { animation: show-segment 12s linear infinite 4.5s; }
-                .segment-5-bad { animation: show-segment 12s linear infinite 6s; }
-                .segment-6-bad { animation: show-segment 12s linear infinite 7.5s; }
-                .segment-7-bad { animation: show-segment 12s linear infinite 9s; }
-                .segment-4-good { animation: show-segment 12s linear infinite 4.5s; }
+            .fade-in-out { animation: fade-in-out 12s linear infinite; }
+            @keyframes fade-in-out {
+                0%, 100% { opacity: 0; }
+                5%, 15% { opacity: 1; }
+                20%, 100% { opacity: 0; }
+            }
+            
+            .path-segment { opacity: 0; }
+            .segment-1 { animation: show-segment 12s linear infinite 0s; }
+            .segment-2 { animation: show-segment 12s linear infinite 1.5s; }
+            .segment-3 { animation: show-segment 12s linear infinite 3s; }
+            .segment-4-bad { animation: show-segment 12s linear infinite 4.5s; }
+            .segment-5-bad { animation: show-segment 12s linear infinite 6s; }
+            .segment-6-bad { animation: show-segment 12s linear infinite 7.5s; }
+            .segment-7-bad { animation: show-segment 12s linear infinite 9s; }
+            .segment-4-good { animation: show-segment 12s linear infinite 4.5s; }
 
-                @keyframes show-segment {
-                    0%, 99% { opacity: 0; }
-                    25%, 75% { opacity: 1; }
-                }
-                @keyframes show-segment-good-branch {
-                    0%, 37.4% { opacity: 0; }
-                    37.5%, 49.9% { opacity: 1; }
-                    50%, 100% { opacity: 0; }
-                }
-                 @keyframes show-segment-bad-branch {
-                    0%, 49.9% { opacity: 0; }
-                    50%, 91.5% { opacity: 1; }
-                    91.6%, 100% { opacity: 0; }
-                }
-                .path-good-branch { animation: show-segment-good-branch 12s linear infinite; }
-                .path-bad-branch { animation: show-segment-bad-branch 12s linear infinite; }
-            `}</style>
-        </defs>
+            @keyframes show-segment {
+                0%, 99% { opacity: 0; }
+                25%, 75% { opacity: 1; }
+            }
+            @keyframes show-segment-good-branch {
+                0%, 37.4% { opacity: 0; }
+                37.5%, 49.9% { opacity: 1; }
+                50%, 100% { opacity: 0; }
+            }
+             @keyframes show-segment-bad-branch {
+                0%, 49.9% { opacity: 0; }
+                50%, 91.5% { opacity: 1; }
+                91.6%, 100% { opacity: 0; }
+            }
+            .path-good-branch { animation: show-segment-good-branch 12s linear infinite; }
+            .path-bad-branch { animation: show-segment-bad-branch 12s linear infinite; }
+        </style>
+    </defs>
 
-        {/* Nodes */}
-        <g transform="translate(50 20)">
-            <rect x="-35" y="-15" width="70" height="30" rx="5" fill="#eef2ff" stroke="#c7d2fe" class="dark:fill-gray-700 dark:stroke-gray-600"/>
-            <path d="M-10 -5 L 10 -5 M-10 0 L 10 0 M-10 5 L 5 5" stroke="#a5b4fc" stroke-width="2" stroke-linecap="round"/>
-            <text x="0" y="25" text-anchor="middle" class="text-label font-semibold">Current Prompt</text>
-        </g>
-        <g transform="translate(150 20)">
-            <rect x="-35" y="-15" width="70" height="30" rx="5" fill="#e0f2fe" stroke="#7dd3fc" class="dark:fill-gray-700 dark:stroke-gray-600"/>
-            <path d="M-5 -5 L 0 5 L 5 -5 M0 5 V-8" stroke="#38bdf8" fill="none" class="icon"/>
-            <text x="0" y="25" text-anchor="middle" class="text-label font-semibold">1. AI Lab Test</text>
-        </g>
-         <g transform="translate(250 20)">
-            <rect x="-35" y="-15" width="70" height="30" rx="5" fill="#f0fdf4" stroke="#bbf7d0" class="dark:fill-gray-700 dark:stroke-gray-600"/>
-            <path d="M-10 -5 L 10 -5 M-10 0 L 10 0 M-10 5 L 5 5" stroke="#86efac" stroke-width="2" stroke-linecap="round"/>
-            <text x="0" y="25" text-anchor="middle" class="text-label font-semibold">AI Response</text>
-        </g>
-        <g transform="translate(350 20)">
-            <rect x="-35" y="-15" width="70" height="30" rx="5" fill="#fefce8" stroke="#fde047" class="dark:fill-gray-700 dark:stroke-gray-600"/>
-            <path d="M-5 -8 L 5 2 M-5 2 L 5 -8 M0 5 L 0 10" stroke="#f59e0b" fill="none" class="icon"/>
-            <text x="0" y="25" text-anchor="middle" class="text-label font-semibold">2. Validation</text>
-        </g>
+    <g transform="translate(50 20)">
+        <rect x="-35" y="-15" width="70" height="30" rx="5" fill="#eef2ff" stroke="#c7d2fe" class="dark:fill-gray-700 dark:stroke-gray-600"/>
+        <path d="M-10 -5 L 10 -5 M-10 0 L 10 0 M-10 5 L 5 5" stroke="#a5b4fc" stroke-width="2" stroke-linecap="round"/>
+        <text x="0" y="25" text-anchor="middle" class="text-label font-semibold">Current Prompt</text>
+    </g>
+    <g transform="translate(150 20)">
+        <rect x="-35" y="-15" width="70" height="30" rx="5" fill="#e0f2fe" stroke="#7dd3fc" class="dark:fill-gray-700 dark:stroke-gray-600"/>
+        <path d="M-5 -5 L 0 5 L 5 -5 M0 5 V-8" stroke="#38bdf8" fill="none" class="icon"/>
+        <text x="0" y="25" text-anchor="middle" class="text-label font-semibold">1. AI Lab Test</text>
+    </g>
+     <g transform="translate(250 20)">
+        <rect x="-35" y="-15" width="70" height="30" rx="5" fill="#f0fdf4" stroke="#bbf7d0" class="dark:fill-gray-700 dark:stroke-gray-600"/>
+        <path d="M-10 -5 L 10 -5 M-10 0 L 10 0 M-10 5 L 5 5" stroke="#86efac" stroke-width="2" stroke-linecap="round"/>
+        <text x="0" y="25" text-anchor="middle" class="text-label font-semibold">AI Response</text>
+    </g>
+    <g transform="translate(350 20)">
+        <rect x="-35" y="-15" width="70" height="30" rx="5" fill="#fefce8" stroke="#fde047" class="dark:fill-gray-700 dark:stroke-gray-600"/>
+        <path d="M-5 -8 L 5 2 M-5 2 L 5 -8 M0 5 L 0 10" stroke="#f59e0b" fill="none" class="icon"/>
+        <text x="0" y="25" text-anchor="middle" class="text-label font-semibold">2. Validation</text>
+    </g>
 
-        <g transform="translate(350 120)">
-            <rect x="-40" y="-15" width="80" height="30" rx="5" fill="#f3e8ff" stroke="#c084fc" class="dark:fill-gray-700 dark:stroke-gray-600"/>
-            <path d="M-10 -5 H 10 M-5 0 H 5 M-8 5 H 8" stroke="#a855f7" fill="none" class="icon"/>
-            <text x="0" y="25" text-anchor="middle" class="text-label font-semibold">3. Prompt Doctor</text>
-        </g>
+    <g transform="translate(350 120)">
+        <rect x="-40" y="-15" width="80" height="30" rx="5" fill="#f3e8ff" stroke="#c084fc" class="dark:fill-gray-700 dark:stroke-gray-600"/>
+        <path d="M-10 -5 H 10 M-5 0 H 5 M-8 5 H 8" stroke="#a855f7" fill="none" class="icon"/>
+        <text x="0" y="25" text-anchor="middle" class="text-label font-semibold">3. Prompt Doctor</text>
+    </g>
 
-        <g transform="translate(50 120)">
-            <rect x="-45" y="-15" width="90" height="30" rx="5" fill="#dcfce7" stroke="#86efac" class="dark:fill-gray-700 dark:stroke-gray-600"/>
-            <path d="M-10 -5 L 10 -5 M-10 0 L 10 0 M-10 5 L 5 5" stroke="#4ade80" stroke-width="2" stroke-linecap="round"/>
-            <path d="M20 -5 L 22 0 L 25 2 L 22 4 L 20 9 L 18 4 L 15 2 L 18 0 Z" fill="#fcd34d" />
-            <text x="0" y="25" text-anchor="middle" class="text-label font-semibold">4. New/Refined Prompt</text>
-        </g>
+    <g transform="translate(50 120)">
+        <rect x="-45" y="-15" width="90" height="30" rx="5" fill="#dcfce7" stroke="#86efac" class="dark:fill-gray-700 dark:stroke-gray-600"/>
+        <path d="M-10 -5 L 10 -5 M-10 0 L 10 0 M-10 5 L 5 5" stroke="#4ade80" stroke-width="2" stroke-linecap="round"/>
+        <path d="M20 -5 L 22 0 L 25 2 L 22 4 L 20 9 L 18 4 L 15 2 L 18 0 Z" fill="#fcd34d" />
+        <text x="0" y="25" text-anchor="middle" class="text-label font-semibold">4. New/Refined Prompt</text>
+    </g>
 
-        {/* Flow Arrows */}
-        <path d="M85 20 H 115" stroke="#9ca3af" stroke-width="1.5" class="flow-arrow segment-1 path-bad-branch path-good-branch"/>
-        <path d="M185 20 H 215" stroke="#9ca3af" stroke-width="1.5" class="flow-arrow segment-2 path-bad-branch path-good-branch"/>
-        <path d="M285 20 H 315" stroke="#9ca3af" stroke-width="1.5" class="flow-arrow segment-3 path-bad-branch path-good-branch"/>
-        
-        {/* Bad Path */}
-        <path d="M350 50 V 90" stroke="#ef4444" stroke-width="1.5" class="flow-arrow segment-4-bad path-bad-branch"/>
-        <path d="M320 120 H 95" stroke="#ef4444" stroke-width="1.5" class="flow-arrow segment-5-bad path-bad-branch"/>
-        <path d="M50 90 V 50" stroke="#10b981" stroke-width="1.5" class="flow-arrow segment-6-bad path-bad-branch"/>
+    <path d="M85 20 H 115" stroke="#9ca3af" stroke-width="1.5" class="flow-arrow segment-1 path-bad-branch path-good-branch"/>
+    <path d="M185 20 H 215" stroke="#9ca3af" stroke-width="1.5" class="flow-arrow segment-2 path-bad-branch path-good-branch"/>
+    <path d="M285 20 H 315" stroke="#9ca3af" stroke-width="1.5" class="flow-arrow segment-3 path-bad-branch path-good-branch"/>
+    
+    <path d="M350 50 V 90" stroke="#ef4444" stroke-width="1.5" class="flow-arrow segment-4-bad path-bad-branch"/>
+    <path d="M320 120 H 95" stroke="#ef4444" stroke-width="1.5" class="flow-arrow segment-5-bad path-bad-branch"/>
+    <path d="M50 90 V 50" stroke="#10b981" stroke-width="1.5" class="flow-arrow segment-6-bad path-bad-branch"/>
 
-        {/* Good Path */}
-        <path d="M350 50 C 350 80, 150 80, 150 50 V 50 L 150 50 V 50" stroke="#22c55e" stroke-width="1.5" class="flow-arrow segment-4-good path-good-branch" fill="none"/>
+    <path d="M350 50 C 350 80, 150 80, 150 50 V 50 L 150 50 V 50" stroke="#22c55e" stroke-width="1.5" class="flow-arrow segment-4-good path-good-branch" fill="none"/>
 
-        {/* Animated Object */}
-        <g>
-            <path d="M-5 -7 L 5 -7 L 5 7 L -5 7 Z" fill="#60a5fa" stroke="white" stroke-width="1" class="dark:stroke-gray-800">
-                <animateMotion dur="12s" repeatCount="indefinite" fill="freeze"
-                    path="M50 20 H 150 H 250 H 350 V 120 H 50 V 20"
-                    keyTimes="0; 0.125; 0.25; 0.375; 0.5; 0.75; 0.91; 1"
-                />
-            </path>
-        </g>
+    <g>
+        <path d="M-5 -7 L 5 -7 L 5 7 L -5 7 Z" fill="#60a5fa" stroke="white" stroke-width="1" class="dark:stroke-gray-800">
+            <animateMotion dur="12s" repeatCount="indefinite" fill="freeze"
+                path="M50 20 H 150 H 250 H 350 V 120 H 50 V 20"
+                keyTimes="0; 0.125; 0.25; 0.375; 0.5; 0.75; 0.91; 1"
+            />
+        </path>
+    </g>
 
-        {/* Validation Outcomes */}
-        <g class="path-bad-branch">
-            <text x="320" y="65" text-anchor="middle" class="text-label font-semibold" fill="#ef4444">Weaknesses Found</text>
-        </g>
-         <g class="path-good-branch">
-            <text x="250" y="70" text-anchor="middle" class="text-label font-semibold" fill="#22c55e">✓ Perfect! Consistency Check...</text>
-        </g>
-    </svg>
+    <g class="path-bad-branch">
+        <text x="320" y="65" text-anchor="middle" class="text-label font-semibold" fill="#ef4444">Weaknesses Found</text>
+    </g>
+     <g class="path-good-branch">
+        <text x="250" y="70" text-anchor="middle" class="text-label font-semibold" fill="#22c55e">✓ Perfect! Consistency Check...</text>
+    </g>
+</svg>
