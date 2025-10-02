@@ -1,0 +1,10 @@
+<svg viewBox="0 0 100 100" className="w-full h-full">
+        <rect x="25" y="25" width="50" height="50" rx="5" fill="#1f2937" stroke="#4b5563" strokeWidth="2" />
+        <text x="50" y="58" fontSize="24" textAnchor="middle" fill="#9ca3af">?</text>
+        <path d="M5 40 L 25 50 L 5 60" fill="none" stroke="#a78bfa" strokeWidth="3" strokeLinecap="round">
+            <animate attributeName="d" values="M5 40 L 25 50 L 5 60; M5 50 L 25 50 L 5 50; M5 40 L 25 50 L 5 60" dur="2s" repeatCount="indefinite" />
+        </path>
+        <path d="M95 40 L 75 50 L 95 60" fill="none" stroke="#a78bfa" strokeWidth="3" strokeLinecap="round">
+            <animate attributeName="d" values="M95 60 L 75 50 L 95 40; M95 50 L 75 50 L 95 50; M95 60 L 75 50 L 95 40" dur="2s" repeatCount="indefinite" />
+        </path>
+    </svg>

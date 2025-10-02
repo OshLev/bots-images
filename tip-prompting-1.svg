@@ -1,0 +1,8 @@
+<svg viewBox="0 0 100 100" className="w-full h-full">
+        <defs><style>{`.sparkle-prompt{animation:sparkle-prompt-anim 2s infinite ease-in-out;transform-origin:center}@keyframes sparkle-prompt-anim{0%,100%{transform:scale(.8);opacity:.5}50%{transform:scale(1.1);opacity:1}}`}</style></defs>
+        <path d="M30 35 H70 M30 50 H60 M30 65 H50" stroke="#a5b4fc" strokeWidth="4" strokeLinecap="round"/>
+        <rect x="75" y="30" width="5" height="40" fill="#6366f1" rx="2.5">
+            <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
+        </rect>
+        <path className="sparkle-prompt" style={{ animationDelay: '0s' }} d="M25 25 L27 30 L29 25 L34 23 L29 21 L27 16 L25 21 L20 23 Z" fill="#facc15"/>
+    </svg>

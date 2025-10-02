@@ -1,0 +1,7 @@
+<svg viewBox="0 0 100 100" className="w-full h-full">
+        <path d="M25 30 H75 M25 50 H75 M25 70 H75" stroke="#e0e7ff" strokeWidth="6" strokeLinecap="round" />
+        <path d="M30 30 L 40 40 L 55 25" fill="none" stroke="#4ade80" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round">
+            <animate attributeName="stroke-dasharray" values="0 50; 50 0; 50 0" dur="2.5s" repeatCount="indefinite" begin="0s" />
+            <animate attributeName="opacity" values="0; 1; 0" dur="2.5s" repeatCount="indefinite" begin="0s" />
+        </path>
+    </svg>
