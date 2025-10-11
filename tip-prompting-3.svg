@@ -1,4 +1,4 @@
-<svg viewBox="0 0 100 100" className="w-full h-full">
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <defs>
             <style>{`
                 .persona-face path { transition: d 0.3s ease-in-out; }
@@ -9,27 +9,17 @@
                 }
             `}</style>
         </defs>
-        
         <circle className="persona-aura" cx="50" cy="50" r="40" fill="#a5b4fc" />
-        
-        
         <circle cx="50" cy="50" r="30" fill="#eef2ff" stroke="#c7d2fe" strokeWidth="3" />
-
-        
         <g className="persona-face" fill="none" stroke="#6366f1" strokeWidth="4" strokeLinecap="round">
-            
             <path d="M38 45 A 5 3 0 0 1 48 45 A 5 3 0 0 1 38 45 Z">
-                
                 <animate attributeName="d" dur="4s" repeatCount="indefinite"
                     values="M38 45 A 5 3 0 0 1 48 45 A 5 3 0 0 1 38 45 Z; M38 45 L 48 45; M38 45 A 5 3 0 0 1 48 45 A 5 3 0 0 1 38 45 Z; M38 45 A 5 3 0 0 1 48 45 A 5 3 0 0 1 38 45 Z"
                     keyTimes="0; 0.1; 0.2; 1"
                 />
             </path>
             <path d="M62 45 A 5 3 0 0 0 52 45 A 5 3 0 0 0 62 45 Z" />
-            
-            
             <path d="M40 60 Q 50 70 60 60">
-                
                 <animate attributeName="d" dur="4s" repeatCount="indefinite"
                     values="M40 60 Q 50 70 60 60; M40 60 Q 50 65 60 60; M40 60 Q 50 75 60 60; M40 60 Q 50 70 60 60"
                     keyTimes="0; 0.4; 0.6; 1"

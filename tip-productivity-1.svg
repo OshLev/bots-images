@@ -1,7 +1,7 @@
-<svg viewBox="0 0 100 100" className="w-full h-full">
-        <rect x="20" y="15" width="60" height="75" rx="8" fill="#dcfce7" stroke="#22c55e" strokeWidth="2" />
-        <rect x="30" y="10" width="40" height="10" rx="5" fill="#86efac" stroke="#16a34a" strokeWidth="2" />
-        <g stroke="#16a34a" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round">
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <rect x="20" y="15" width="60" height="75" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2" />
+        <rect x="30" y="10" width="40" height="10" rx="5" fill="#86efac" stroke="#16a34a" stroke-width="2" />
+        <g stroke="#16a34a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
             <path d="M35 35 L45 45 L65 25"><animate attributeName="stroke-dasharray" values="0 50; 50 0; 50 0" dur="2s" repeatCount="indefinite" begin="0s" /><animate attributeName="opacity" values="0; 1; 0" dur="2s" repeatCount="indefinite" begin="0s" /></path>
             <path d="M35 55 L45 65 L65 45"><animate attributeName="stroke-dasharray" values="0 50; 50 0; 50 0" dur="2s" repeatCount="indefinite" begin="0.5s" /><animate attributeName="opacity" values="0; 1; 0" dur="2s" repeatCount="indefinite" begin="0.5s" /></path>
              <path d="M35 75 L45 85 L65 65"><animate attributeName="stroke-dasharray" values="0 50; 50 0; 50 0" dur="2s" repeatCount="indefinite" begin="1s" /><animate attributeName="opacity" values="0; 1; 0" dur="2s" repeatCount="indefinite" begin="1s" /></path>
