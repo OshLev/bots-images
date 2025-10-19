@@ -1,0 +1,23 @@
+<svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="grad-school" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#4f46e5;stop-opacity:1" />
+        </linearGradient>
+        <style>
+            .data-point { animation: data-pulse 2s infinite ease-in-out; }
+            @keyframes data-pulse { 0%, 100% { opacity: 0.7; } 50% { opacity: 1; transform: scale(1.1); } }
+        </style>
+    </defs>
+    <rect width="100" height="100" rx="20" fill="url(#grad-school)" />
+    <!-- School building -->
+    <path d="M50 25 L20 45 V 75 H 80 V 45 Z" fill="#e0f2fe" />
+    <path d="M50 25 L 80 45" stroke="#93c5fd" stroke-width="2" />
+    <rect x="45" y="55" width="10" height="20" fill="#a5b4fc" />
+    <rect x="30" y="48" width="10" height="10" fill="#a5b4fc" />
+    <rect x="60" y="48" width="10" height="10" fill="#a5b4fc" />
+    <!-- Data/Search element -->
+    <circle cx="70" cy="30" r="12" fill="none" stroke="white" stroke-width="3" />
+    <path d="M78 38 L85 45" stroke="white" stroke-width="3" stroke-linecap="round" />
+    <circle class="data-point" cx="70" cy="30" r="4" fill="white" style="animation-delay: -0.5s;" />
+</svg>
