@@ -1,0 +1,18 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="grad-northstar" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#a78bfa" />
+            <stop offset="100%" stop-color="#8b5cf6" />
+        </linearGradient>
+        <style>
+            .star-pulse { animation: pulse-star 3s infinite ease-in-out; transform-origin: center; }
+            @keyframes pulse-star { 0%, 100% { transform: scale(0.9); opacity: 0.8; } 50% { transform: scale(1.1); opacity: 1; } }
+            .orbit { animation: orbit-spin 10s linear infinite; transform-origin: center; }
+            @keyframes orbit-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        </style>
+    </defs>
+    <rect width="100" height="100" rx="10" fill="#1e1b4b" />
+    <path class="star-pulse" d="M50 35 L 55 48 L 68 50 L 55 52 L 50 65 L 45 52 L 32 50 L 45 48 Z" fill="url(#grad-northstar)" />
+    <circle class="orbit" cx="50" cy="50" r="35" fill="none" stroke="#4c1d95" stroke-width="1.5" />
+    <circle class="orbit" cx="50" cy="15" r="3" fill="#c4b5fd" style="animation-duration: 10s;" />
+</svg>
